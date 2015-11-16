@@ -11,22 +11,23 @@
  * @author Marc Morera <yuhu@mmoreram.com>
  */
 
-namespace PaymentSuite\FreePaymentBundle;
+namespace PaymentSuite\FreePaymentBundle\Services;
 
+use PaymentSuite\FreePaymentBundle\FreePaymentMethod;
 use PaymentSuite\PaymentCoreBundle\PaymentMethodInterface;
 
 /**
- * FreePaymentMethod class
+ * Class FreePaymentMethodFactory
  */
-final class FreePaymentMethod implements PaymentMethodInterface
+class FreePaymentMethodFactory
 {
     /**
-     * Get Free payment method name
+     * Create new PaymentMethodInterface instance
      *
-     * @return string Payment name
+     * @return PaymentMethodInterface New instance
      */
-    public function getPaymentName()
+    public function create()
     {
-        return 'free_payment';
+        return new FreePaymentMethod();
     }
 }
