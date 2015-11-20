@@ -23,7 +23,6 @@
     "require": {
         "php": "^5.4|^7.0",
 
-        "symfony/event-dispatcher": "^2.7|^3.0",
         "symfony/framework-bundle": "^2.7|^3.0",
         "symfony/form": "^2.7|^3.0",
         "symfony/config": "^2.7|^3.0",
